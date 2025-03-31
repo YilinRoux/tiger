@@ -1,1 +1,2 @@
-const server = require('./server.ts');  // O la ruta a tu archivo de servidor
+require('ts-node').register();
+require('./server.ts');
