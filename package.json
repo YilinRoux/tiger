@@ -5,14 +5,14 @@
    "main": "server.ts",
    "scripts": {
      "test": "echo \"Error: no test specified\" && exit 1",
-     "start": "node -r ts-node/register src/server.ts",
+     "start": "node --experimental-specifier-resolution=node --loader ts-node/esm src/server.ts",
      "build": "tsc",
-     "serve": "ts-node src/server.ts"
+     "serve": "ts-node --esm src/server.ts"
    },
    "keywords": ["express", "mongodb", "typescript"],
    "author": "",
    "license": "ISC",
-   "type": "commonjs",
+   "type": "module",
    "engines": {
      "node": ">=18.0.0"
    },
