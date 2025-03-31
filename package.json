@@ -7,7 +7,7 @@
      "test": "echo \"Error: no test specified\" && exit 1",
      "start": "node -r ts-node/register server.ts",
      "build": "tsc",
-     "serve": "node dist/server.js"
+     "serve": "node dist/server.ts"
    },
    "keywords": ["express", "mongodb", "typescript"],
    "author": "",
@@ -32,6 +32,7 @@
      "@types/cors": "^2.8.17",
      "@types/jsonwebtoken": "^9.0.9",
      "@types/express": "^5.0.0",
-     "@types/node": "^20.11.30"
+     "@types/node": "^20.11.30",
+     "@types/nodemailer": "^6.4.14"
    }
 }
